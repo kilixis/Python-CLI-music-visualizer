@@ -5,7 +5,8 @@ import shutil
 import time
 
 # basic settings
-SAMPLE_RATE = 48000
+# You will need to edit the SAMPLE_RATE and another value in line 34
+SAMPLE_RATE = 48000 # Run temp.py script to check all your available devices, then copy the sample rate of your output device and paste here
 BLOCK_SIZE = 1024
 REFRESH_RATE = 1 / 30 
 NUM_BARS = 80
