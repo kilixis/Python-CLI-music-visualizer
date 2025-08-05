@@ -31,7 +31,7 @@ def render_bars(data, width, height):
     bars = (spectrum * height).astype(int)
     return bars
 
-stream = sd.InputStream(callback=audio_callback, device=15, channels=2, samplerate=SAMPLE_RATE, blocksize=BLOCK_SIZE)
+stream = sd.InputStream(callback=audio_callback, device=15, channels=2, samplerate=SAMPLE_RATE, blocksize=BLOCK_SIZE) # Run temp.py then copy and paste the number of your output device in "device={your device}"
 stream.start()
 
 try:
